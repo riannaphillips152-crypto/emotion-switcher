@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Stacks the label and canvas vertically */
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background-color: #FFFFFF;
+  font-family: sans-serif;
+  color: #000000; /* Makes all text (like the <p> label) white */
+}
+
+canvas {
+  display: block;
+  border: 2px solid #FFFFFF;
+}
+
+/* This styles the <p> tag */
+p {
+  font-size: 1.4rem;
+  margin-bottom: 2px; /* Adds space above the slider */
+}
+
+/* This styles the slider itself */
+input[type="range"] {
+  width: 300px;
+}
