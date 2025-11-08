@@ -1,27 +1,37 @@
 body {
   margin: 0;
   display: flex;
-  flex-direction: column; /* Stacks the label and canvas vertically */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
-  background-color: #FFFFFF;
+  min-height: 100vh;
+  /* The background-color here is now just a fallback */
+  background-color: #FFF8E1; /* Default to Joy's background */
   font-family: sans-serif;
-  color: #000000; /* Makes all text (like the <p> label) white */
+  color: #E0E0E0; 
+  /* Add a smooth transition for the color change */
+  transition: background-color 0.5s ease;
 }
 
 canvas {
   display: block;
-  border: 2px solid #FFFFFF;
+  /* --- REMOVED --- */
+  /* border: 1px solid #333; */
 }
 
-/* This styles the <p> tag */
 p {
-  font-size: 1.4rem;
-  margin-bottom: 2px; /* Adds space above the slider */
+  font-size: 1.2rem;
+  margin: 5px 0; 
 }
 
-/* This styles the slider itself */
+.instruction-text {
+    font-size: 0.9rem;
+    color: #BBBBBB; 
+    margin-bottom: 15px;
+}
+
 input[type="range"] {
   width: 300px;
+  margin-top: 10px; 
+  margin-bottom: 10px; 
 }
